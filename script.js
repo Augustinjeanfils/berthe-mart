@@ -706,7 +706,7 @@ function renderCartPage() {
                                     </div>
                                     <div class="cart-item-subtotal">
                                         <p>Sous-total</p>
-                                        <p>${item.price * item.quantity} FC</p>
+                                        <p>${item.price * item.quantity} Gds</p>
                                     </div>
                                 </div>
                             </div>
@@ -720,18 +720,18 @@ function renderCartPage() {
                             ${cart.map(item => `
                                 <div class="summary-item">
                                     <span class="summary-item-name">${item.name} x ${item.quantity}</span>
-                                    <span>${item.price * item.quantity} FC</span>
+                                    <span>${item.price * item.quantity} GDS</span>
                                 </div>
                             `).join('')}
                         </div>
                         <hr class="summary-divider">
                         <div class="summary-subtotal">
                             <span>Sous-total</span>
-                            <span>${getCartTotal()} FC</span>
+                            <span>${getCartTotal()} GDS</span>
                         </div>
                         <div class="summary-total">
                             <span>Total</span>
-                            <span class="total-amount">${getCartTotal()} FC</span>
+                            <span class="total-amount">${getCartTotal()} GDS</span>
                         </div>
                         <button class="btn btn-green order-btn" onclick="placeOrder()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -770,12 +770,12 @@ function placeOrder() {
     cart.forEach((item, index) => {
         message += `\n${index + 1}. ${item.name}\n`;
         message += `   • Quantité: ${item.quantity}\n`;
-        message += `   • Prix unitaire: ${item.price} FC\n`;
-        message += `   • Sous-total: ${item.price * item.quantity} FC\n`;
+        message += `   • Prix unitaire: ${item.price} GDS\n`;
+        message += `   • Sous-total: ${item.price * item.quantity} GDS\n`;
     });
     
     message += `\n━━━━━━━━━━━━━━━━━━\n`;
-    message += `*TOTAL: ${getCartTotal()} FC*\n`;
+    message += `*TOTAL: ${getCartTotal()} GDS*\n`;
     message += `━━━━━━━━━━━━━━━━━━\n\n`;
     message += `Merci de confirmer la disponibilité et le délai de livraison.`;
     
