@@ -119,6 +119,7 @@ function navigateTo(page) {
     window.scrollTo(0, 0);
 }
 
+
 // Home Page
 function renderHomePage() {
     const featuredProducts = products.slice(0, 4);
@@ -251,7 +252,7 @@ function renderProductCard(product) {
             </div>
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
-                <div class="product-price">${product.price} FC</div>
+                <div class="product-price">${product.price} GDS</div>
                 <div class="product-actions">
                     <div class="quantity-selector">
                         <button class="quantity-btn" onclick="decrementQuantity('${product.id}')">
