@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market - Votre supermarché de confiance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo" onclick="navigateTo('home')">
+                    <div class="logo-icon">
+                        <span>B</span>
+                    </div>
+                    <span class="logo-text">Bon Cœur Mini Mart</span>
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="nav-desktop">
+                    <a href="#" onclick="navigateTo('home')" class="nav-link active" data-page="home">Accueil</a>
+                    <a href="#" onclick="navigateTo('products')" class="nav-link" data-page="products">Produits</a>
+                    <a href="#" onclick="navigateTo('about')" class="nav-link" data-page="about">À propos</a>
+                    <a href="#" onclick="navigateTo('contact')" class="nav-link" data-page="contact">Contact</a>
+                </nav>
+
+                <!-- Cart Icon -->
+                <button class="cart-btn" onclick="navigateTo('cart')">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 2L6 6H18L15 2H9Z"></path>
+                        <path d="M6 6H18V20C18 21.1 17.1 22 16 22H8C6.9 22 6 21.1 6 20V6Z"></path>
+                        <path d="M9 10V12"></path>
+                        <path d="M15 10V12"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Navigation Mobile -->
+        <nav class="nav-mobile">
+            <a href="#" onclick="navigateTo('home')" class="nav-link active" data-page="home">Accueil</a>
+            <a href="#" onclick="navigateTo('products')" class="nav-link" data-page="products">Produits</a>
+            <a href="#" onclick="navigateTo('about')" class="nav-link" data-page="about">À propos</a>
+            <a href="#" onclick="navigateTo('contact')" class="nav-link" data-page="contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent"></main>
+
+    <script src="script.js"></script>
+</body>
+</html>
