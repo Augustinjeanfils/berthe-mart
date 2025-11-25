@@ -684,7 +684,7 @@ function renderCartPage() {
                                     </div>
                                     <div class="cart-item-details">
                                         <div class="cart-item-name">${item.name}</div>
-                                        <div class="cart-item-price">${item.price} FC</div>
+                                        <div class="cart-item-price">${item.price} GDS</div>
                                         <div class="cart-item-actions">
                                             <div class="quantity-selector">
                                                 <button class="quantity-btn" onclick="updateCartQuantity('${item.id}', ${item.quantity - 1})">
