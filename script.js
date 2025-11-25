@@ -119,6 +119,18 @@ function navigateTo(page) {
     window.scrollTo(0, 0);
 }
 
+// Navigate to category - filters products and goes to products page
+function navigateToCategory(categoryId) {
+    navigateTo('products');
+    
+    // Delay to ensure DOM is rendered
+    setTimeout(() => {
+        const categoryBtn = document.querySelector(`[data-category="${categoryId}"]`);
+        if (categoryBtn) {
+            categoryBtn.click();
+        }
+    }, 100);
+}
 
 // Home Page
 function renderHomePage() {
@@ -151,7 +163,7 @@ function renderHomePage() {
                 </div>
                 <div class="grid grid-4">
                     ${categories.map(cat => `
-                        <div class="category-card">
+                        <div class="category-card" onclick="navigateToCategory('${cat.id}')">
                             <img src="${cat.image}" alt="${cat.name}">
                             <div class="category-overlay"></div>
                             <div class="category-name">${cat.name}</div>
