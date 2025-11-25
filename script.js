@@ -358,7 +358,7 @@ function saveCart() {
 function renderAboutPage() {
     const galleryImages = [
         'whatsapp.jpeg',
-        'https://images.unsplash.com/photo-1601599561213-832382fd07ba?w=600',
+        'photo_à_propos.jpeg',
         'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600',
         'https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?w=600',
         'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600',
