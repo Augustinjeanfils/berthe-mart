@@ -31,10 +31,10 @@ const products = [
     { id: 'p3', name: 'Tilapia', price: 1500, category: 'poissonnerie', image: 'https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=400' },
     
     // Produits alimentaires
-    { id: 'p4', name: 'Fromage premium', price: 1200, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400' },
-    { id: 'p5', name: 'Pain frais', price: 300, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400' },
-    { id: 'p6', name: 'Fruits frais', price: 800, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400' },
-    { id: 'p7', name: 'Légumes bio', price: 600, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p4', name: 'Lwuil crisol', price: 1200, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400' },
+    { id: 'p5', name: 'Ketchup TOMPAC', price: 300, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400' },
+    { id: 'p6', name: 'Ketchup Famosa Sachet', price: 800, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400' },
+    { id: 'p7', name: 'La Perla Pate De Tomate', price: 600, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     
     // Produits glacés
     { id: 'p8', name: 'Glace vanille', price: 500, category: 'glaces', image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400' },
