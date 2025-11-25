@@ -127,7 +127,7 @@ function renderHomePage() {
     return `
         <!-- Hero Section -->
         <section class="hero">
-            <img src="https://images.unsplash.com/photo-1631856956771-bd96b2bd71f6?w=1200" alt="Market" class="hero-image">
+            <img src="photo_à_propos.jpeg" alt="Market" class="hero-image">
             <div class="hero-content container">
                 <div class="hero-text">
                     <h1>Bienvenue dans votre market</h1>
@@ -403,7 +403,7 @@ function renderAboutPage() {
                         </p>
                     </div>
                     <div class="about-image">
-                        <img src="logo_page_à_propos.jpg" alt="Notre market">
+                        <img src="photo_à_propos.jpeg" alt="Notre market">
                     </div>
                 </div>
             </div>
