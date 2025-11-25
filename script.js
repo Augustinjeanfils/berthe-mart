@@ -534,7 +534,7 @@ function renderContactPage() {
                                 <div style="flex: 1;">
                                     <h3>WhatsApp</h3>
                                     <p>Contactez-nous directement sur WhatsApp</p>
-                                    <button class="btn btn-green" onclick="window.open('https://wa.me/243123456789', '_blank')" style="margin-top: 0.75rem;">
+                                    <button class="btn btn-green" onclick="window.open('https://wa.me/50942936443', '_blank')" style="margin-top: 0.75rem;">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                                         </svg>
@@ -601,7 +601,7 @@ function renderContactPage() {
                             </div>
                             <div class="map-container">
                                 <iframe
-                                    src="https://maps.app.goo.gl/nwNL1cdRxconAUEK9"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3978.8602287302917!2d15.313919!3d-4.322447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMTknMjAuOCJTIDE1wrAxOCc1MC4xIkU!5e0!3m2!1sen!2s!4v1234567890"
                                     allowfullscreen
                                     loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"
@@ -645,7 +645,7 @@ function attachContactFormListener() {
         const message = document.getElementById('contactMessage').value;
         
         const whatsappMessage = `Bonjour, je suis ${name}. ${message}`;
-        window.open(`https://wa.me/42936443?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+        window.open(`https://wa.me/50942936443?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
     });
 }
 
@@ -780,5 +780,5 @@ function placeOrder() {
     message += `━━━━━━━━━━━━━━━━━━\n\n`;
     message += `Merci de confirmer la disponibilité et le délai de livraison.`;
     
-    window.open(`https://wa.me/42936443?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/50942936443?text=${encodeURIComponent(message)}`, '_blank');
 }
