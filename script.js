@@ -604,7 +604,7 @@ function renderContactPage() {
                             </div>
                             <div class="map-container">
                                 <iframe
-                                    src=""https://www.google.com/maps?q=18.509508,-72.289375&hl=fr&z=15&output=embed"
+                                    src="https://www.google.com/maps?q=18.509508,-72.289375&hl=fr&z=15&output=embed"
                                     allowfullscreen
                                     loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"
