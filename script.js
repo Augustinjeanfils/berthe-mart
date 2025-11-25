@@ -518,7 +518,7 @@ function renderContactPage() {
                                 <div>
                                     <h3>Téléphone</h3>
                                     <p>Appelez-nous pour toute urgence ou information</p>
-                                    <a href="tel:+243123456789">+243 123 456 789</a>
+                                    <a href="tel:+50942936443">+509 42936443</a>
                                 </div>
                             </div>
                         </div>
