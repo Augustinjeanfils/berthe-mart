@@ -357,7 +357,7 @@ function saveCart() {
 // About Page
 function renderAboutPage() {
     const galleryImages = [
-        'https://imgur.com/a/QiG3Ttk',
+        'https://images.unsplash.com/photo-1631856956771-bd96b2bd71f6?w=600',
         'https://images.unsplash.com/photo-1601599561213-832382fd07ba?w=600',
         'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600',
         'https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?w=600',
