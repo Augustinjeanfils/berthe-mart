@@ -745,8 +745,8 @@ function renderCartPage() {
                         <div class="order-info">
                             <h3>Informations</h3>
                             <ul>
-                                <li>✓ Paiement à la livraison</li>
-                                <li>✓ Livraison rapide</li>
+                                <li>✓ Paiement via Mon Cash, Natcash, Virement Bancaire </li>
+                                <li>✓ Livraison rapide et gratuit </li>
                                 <li>✓ Produits frais garantis</li>
                                 <li>✓ Service client réactif</li>
                             </ul>
