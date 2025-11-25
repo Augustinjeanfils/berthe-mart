@@ -127,7 +127,7 @@ function renderHomePage() {
     return `
         <!-- Hero Section -->
         <section class="hero">
-            <img src="https://images.unsplash.com/photo-1631856956771-bd96b2bd71f6?w=1200" alt="Market" class="hero-image">
+            <img src="photo_à_propos.jpeg" alt="Market" class="hero-image">
             <div class="hero-content container">
                 <div class="hero-text">
                     <h1>Bienvenue dans votre market</h1>
@@ -358,11 +358,11 @@ function saveCart() {
 function renderAboutPage() {
     const galleryImages = [
         'whatsapp.jpeg',
-        'https://images.unsplash.com/photo-1601599561213-832382fd07ba?w=600',
-        'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=600',
+        'photo_à_propos.jpeg',
+        '3ephoto_à_propos.jpeg',
         'https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?w=600',
-        'https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=600',
-        'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600',
+        '5ephoto_à_propos.jpeg',
+        'last_à_propos.jpeg',
     ];
     
     return `
@@ -403,7 +403,7 @@ function renderAboutPage() {
                         </p>
                     </div>
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1631856956771-bd96b2bd71f6?w=800" alt="Notre market">
+                        <img src="photo_à_propos.jpeg" alt="Notre market">
                     </div>
                 </div>
             </div>
