@@ -130,7 +130,7 @@ function renderHomePage() {
             <img src="photo_à_propos.jpeg" alt="Market" class="hero-image">
             <div class="hero-content container">
                 <div class="hero-text">
-                    <h1>Bienvenue dans Bon cœur Mini Mart  market</h1>
+                    <h1>Bienvenue dans Bon cœur Mini Mart </h1>
                     <p>Produits variés et disponibles chaque jour.</p>
                     <button class="btn btn-primary" onclick="navigateTo('products')">
                         voir les produits 
