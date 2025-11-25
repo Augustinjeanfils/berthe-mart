@@ -403,7 +403,7 @@ function renderAboutPage() {
                         </p>
                     </div>
                     <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1631856956771-bd96b2bd71f6?w=800" alt="Notre market">
+                        <img src="logo_page_à_propos.jpg" alt="Notre market">
                     </div>
                 </div>
             </div>
