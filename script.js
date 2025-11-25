@@ -556,7 +556,7 @@ function renderContactPage() {
                                 <div>
                                     <h3>Email</h3>
                                     <p>Envoyez-nous un email, nous vous répondrons rapidement</p>
-                                    <a href="mailto:contact@market.com">contact@market.com</a>
+                                    <a href="mailto:boncoeurdistribution@gmail.com">boncoeurdistribution@gmail.com</a>
                                 </div>
                             </div>
                         </div>
