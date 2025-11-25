@@ -133,7 +133,7 @@ function renderHomePage() {
                     <h1>Bienvenue dans votre market</h1>
                     <p>Produits variés et disponibles chaque jour.</p>
                     <button class="btn btn-primary" onclick="navigateTo('products')">
-                        Wè Produits yo
+                        voir les produits 
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
