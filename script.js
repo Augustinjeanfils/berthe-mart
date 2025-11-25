@@ -35,6 +35,10 @@ const products = [
     { id: 'p5', name: 'Ketchup TOMPAC', price: 300, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400' },
     { id: 'p6', name: 'Ketchup Famosa Sachet', price: 800, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400' },
     { id: 'p7', name: 'La Perla Pate De Tomate', price: 600, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p8', name: 'La Perla Lodized Salt', price: 1200, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=400' },
+    { id: 'p9', name: 'La Favorita Hot Dog ', price: 300, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400' },
+    { id: 'p10', name: 'Avoine Sachet', price: 800, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=400' },
+    { id: 'p10', name: 'Atizan (Au Beurre)', price: 600, category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     
     // Produits glacés
     { id: 'p8', name: 'Glace vanille', price: 500, category: 'glaces', image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400' },
