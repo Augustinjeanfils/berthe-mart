@@ -362,7 +362,7 @@ function renderAboutPage() {
         '3ephoto_à_propos.jpeg',
         'https://images.unsplash.com/photo-1588964895597-cfccd6e2dbf9?w=600',
         '5ephoto_à_propos.jpeg',
-        'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600',
+        'last_à_propos.jpeg',
     ];
     
     return `
