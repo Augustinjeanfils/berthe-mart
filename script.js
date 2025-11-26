@@ -501,6 +501,23 @@ function renderProductsPage() {
             <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
                 <h1 style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--gray-900);">Nos produits</h1>
                 
+                <!-- Search Bar -->
+                <div class="search-container" style="margin-bottom: 2rem;">
+                    <div style="position: relative;">
+                        <input 
+                            type="text" 
+                            id="productSearch" 
+                            placeholder="Rechercher un produit..." 
+                            class="search-input"
+                            style="width: 100%; padding: 0.75rem 1rem; font-size: 1rem; border: 2px solid var(--red-600); border-radius: 0.5rem; background-color: white;"
+                        >
+                        <svg class="search-icon" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: var(--red-600);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                </div>
+                
                 <!-- Filter -->
                 <div class="filter-container">
                     <div class="filter-buttons">
@@ -529,6 +546,32 @@ function renderProductsPage() {
 }
 
 function attachProductsPageListeners() {
+    // Search functionality
+    const searchInput = document.getElementById('productSearch');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
+            
+            let filtered = products;
+            
+            if (activeCategory !== 'all') {
+                filtered = filtered.filter(p => p.category === activeCategory);
+            }
+            
+            if (searchTerm) {
+                filtered = filtered.filter(p => 
+                    p.name.toLowerCase().includes(searchTerm) ||
+                    p.id.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            document.getElementById('productsGrid').innerHTML = filtered.length > 0 
+                ? filtered.map(product => renderProductCard(product)).join('')
+                : '<div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--gray-600);">Aucun produit trouvé</div>';
+        });
+    }
+    
     // Filter buttons
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -536,9 +579,20 @@ function attachProductsPageListeners() {
             btn.classList.add('active');
             
             const category = btn.dataset.category;
-            const filteredProducts = category === 'all' ? products : products.filter(p => p.category === category);
+            const searchTerm = document.getElementById('productSearch')?.value.toLowerCase().trim() || '';
             
-            document.getElementById('productsGrid').innerHTML = filteredProducts.map(product => renderProductCard(product)).join('');
+            let filteredProducts = category === 'all' ? products : products.filter(p => p.category === category);
+            
+            if (searchTerm) {
+                filteredProducts = filteredProducts.filter(p => 
+                    p.name.toLowerCase().includes(searchTerm) ||
+                    p.id.toLowerCase().includes(searchTerm)
+                );
+            }
+            
+            document.getElementById('productsGrid').innerHTML = filteredProducts.length > 0
+                ? filteredProducts.map(product => renderProductCard(product)).join('')
+                : '<div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--gray-600);">Aucun produit trouvé</div>';
         });
     });
 }

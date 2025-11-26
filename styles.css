@@ -532,6 +532,28 @@ main {
     background: var(--emerald-600);
 }
 
+/* Search */
+.search-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.search-input {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--emerald-500) !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.search-input::placeholder {
+    color: var(--gray-400);
+}
+
 /* Filter */
 .filter-container {
     background: white;
