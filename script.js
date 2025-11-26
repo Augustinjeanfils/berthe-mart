@@ -435,6 +435,28 @@ const products = [
     { id: 'p25', name: 'Kit pâtes', price: 1500, category: 'kits', image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400' },
 ];
 
+// Ensure each 'alimentaires' product has a stable image URL (Unsplash search-based)
+// This sets `product.image` so deployed sites will use explicit URLs rather than
+// relying on runtime-only rendering logic.
+products.forEach(p => {
+    try {
+        if (p && p.category === 'alimentaires') {
+            const raw = (p.name || '').toString();
+            const cleaned = raw.replace(/\([^)]*\)/g, '')
+                                .replace(/[^a-zA-Z0-9\s-]/g, ' ')
+                                .replace(/\s+/g, ' ')
+                                .trim()
+                                .toLowerCase()
+                                .slice(0, 60);
+            const query = encodeURIComponent(cleaned || 'alimentaire');
+            // Use source.unsplash to get a relevant image; 600x600 for better quality
+            p.image = `https://source.unsplash.com/600x600/?${query}`;
+        }
+    } catch (e) {
+        // ignore and keep existing image if any
+    }
+});
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
