@@ -709,6 +709,27 @@ const products = [
     { id: 'c272', name: 'REXONA (SEXY BOUQUET)', price: '', category: 'cosmetiques', image: 'https://source.unsplash.com/600x600/?deodorant' },
 ];
 
+// Fix broken image URLs: replace source.unsplash.com with working Unsplash photo URLs
+const categoryDefaults = {
+    'alimentaires': 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400&h=400',
+    'cosmetiques': 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400&h=400',
+    'glaces': 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400&h=400',
+    'menagers': 'https://images.unsplash.com/photo-1585421514738-01798e348b17?w=400&h=400',
+    'lessive': 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400&h=400',
+    'parfums': 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400&h=400',
+    'hygiene': 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400',
+    'maji': 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=400',
+    'bebe': 'https://images.unsplash.com/photo-1619045207244-5a4fdecc9616?w=400&h=400',
+    'kits': 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=400',
+    'poissonnerie': 'https://images.unsplash.com/photo-1637679242615-0ddbbb34b7d7?w=400&h=400'
+};
+
+products.forEach(p => {
+    if (p && p.image && p.image.includes('source.unsplash.com')) {
+        p.image = categoryDefaults[p.category] || 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=400';
+    }
+});
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
