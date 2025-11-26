@@ -323,6 +323,80 @@ const products = [
     { id: 'p292', name: 'ELSA MUFFIN RAISINS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     { id: 'p293', name: 'ELLE & VIRE ABRICOT', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     { id: 'p294', name: 'ELLE & VIRE BANANE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p295', name: 'PASCUAL VANILLA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p296', name: 'CONDENSED MILK PEAK', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p297', name: 'GALLIA CALISMA 2', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p298', name: 'PASCUAL YOGIKIDS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p299', name: 'PASCUAL(BLUEBERRY)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p300', name: 'CODIGEL MILK CUBE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p301', name: 'CHICOLAC', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p302', name: 'PASCUAL (MACEDONIA)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p303', name: 'PASCUAL (BIG DAY)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p304', name: 'PASCUAL (GREEK)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p305', name: 'PASCUAL (VAINILLA)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p306', name: 'PASCUAL BANANA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p307', name: 'PASCUAL BLUEBERRY', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p308', name: 'PASCUAL (WHOLE MILK)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p309', name: 'PASCUAL (YOGIKIDS)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p310', name: 'CAISSE PASCUAL', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p311', name: 'CAISSE ALASKA POWDER MILK', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p312', name: 'FROMAGE LA VACHE QUI RIT', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p313', name: 'BONGU(LAIT ENTIER EN POUDRE)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p314', name: 'BONLE (LAIT)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p315', name: 'GLORIA(ZERO LACTO)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p316', name: 'YOFRESH DURAZNO', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p317', name: 'CAISSE LAIT BONGU', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p318', name: 'PEDIASURE VANILLE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p319', name: 'PEDIASURE VANILLA SHAKE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p320', name: 'YOGURT ZOTTIS FRUIT', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p321', name: 'PASCUAL STRAWBERRY / FRE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p322', name: 'PASCUAL STRAWBERRY- BAA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p323', name: 'PASCUAL FRUIT SALAD', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p324', name: 'PASCUAL GREEK', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p325', name: 'NESTLE CONDENSED MILK', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p326', name: 'LAIT ALACTA PLUS ALASKA (INSTANT)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p327', name: 'LAIT ALACTA PLUS PREBIOTIC', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p328', name: 'LAIT NURSIE PETIT', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p329', name: 'LAIT TI MALICE EVAPORE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p330', name: 'Gloria', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p331', name: 'PEDIASURE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p332', name: 'GLORIA (LECHE ENTERA)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p333', name: 'GLORIA (LAIT)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p334', name: 'YOFRESH FRESA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p335', name: 'YOFRESH VANILLA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p336', name: 'YOGURT ELLE & VIRE ASSOR', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p337', name: 'GALLIA (2)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p338', name: 'GALLIA (CALISMA) GROS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p339', name: 'LAIT NURSIE 0-6 MOIS GROS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p340', name: 'LAIT NESTLE NIDO GROWING', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p341', name: 'ALASKA (INSTANT)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p342', name: 'ALASKA (LAIT)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p343', name: 'LAIT NUTRA MARMITE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p344', name: 'MULIK CHOCOLATE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p345', name: 'ABLE FARM CONDENSED', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p346', name: 'MULIK STRAWBERRY', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p347', name: 'MILKANA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p348', name: 'TARTINO', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p349', name: 'LAIT BON COEUR GROS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p350', name: 'NESTLE NIDO', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p351', name: 'LAIT BON COEUR PETIT', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p352', name: 'NIDO 1+ LAIT EN POUDRE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p353', name: 'LAIT BONGU EVAPORE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p354', name: 'SPORT SHAKE STRAWBERRY', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p355', name: 'NUTRIGU 3', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p356', name: 'CEREALES', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p357', name: 'NURSIE 0-6 MOIS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p358', name: 'PETIT GREEN-LAND (INSTANTANE)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p359', name: 'LAIT CARNATION NESTLE EVA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p360', name: 'GREEN-LAND (INSTANTANE)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p361', name: 'LAIT EN POUDRE OLIMP MILK', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p362', name: 'LAIT GLORIA EVAPORE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p363', name: 'LAIT KERRY EN POUDRE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p364', name: 'GREEN-LAND (CAMPO VERDE)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p365', name: 'ALACTA PLUS', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p366', name: 'GREEN LAND 900G', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p367', name: 'SPORT SHAKE VANILLA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p368', name: 'LAIT NURSIE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     
     // Produits glacés 
     { id: 'p', name: 'Glace vanille', price: 500, category: 'glaces', image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=400' },
@@ -599,10 +673,30 @@ function attachProductsPageListeners() {
 
 // Product Card Component
 function renderProductCard(product) {
+    // If the product is in 'alimentaires', build a query-based Unsplash image URL
+    let imageUrl = product.image;
+    try {
+        if (product && product.category === 'alimentaires') {
+            // Create a safe query from the product name (remove punctuation, limit length)
+            const raw = (product.name || '').toString();
+            const cleaned = raw.replace(/\([^)]*\)/g, '') // remove parenthesis content
+                                .replace(/[^a-zA-Z0-9\s-]/g, ' ') // remove special chars
+                                .replace(/\s+/g, ' ') // collapse spaces
+                                .trim()
+                                .toLowerCase()
+                                .slice(0, 60); // limit length
+
+            const query = encodeURIComponent(cleaned || 'alimentaire');
+            imageUrl = `https://source.unsplash.com/400x400/?${query}`;
+        }
+    } catch (e) {
+        imageUrl = product.image;
+    }
+
     return `
         <div class="product-card">
             <div class="product-image">
-                <img src="${product.image}" alt="${product.name}">
+                <img src="${imageUrl}" alt="${product.name}">
             </div>
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
