@@ -352,7 +352,7 @@ const products = [
     { id: 'p20', name: 'Eau minérale 6x1.5L', price: 450, category: 'maji', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400' },
     { id: 'p21', name: 'Eau gazeuse', price: 200, category: 'maji', image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f0e?w=400' },
     
-    // Produits bébé
+    // Produits bébé 
     { id: 'p22', name: 'Couches bébé', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'p23', name: 'Lingettes bébé', price: 600, category: 'bebe', image: 'https://images.unsplash.com/photo-1602641056105-7c4e85a6096d?w=400' },
     
