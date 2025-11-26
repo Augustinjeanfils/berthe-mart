@@ -1050,6 +1050,7 @@ function renderProductsPage() {
                         <button class="filter-btn" data-category="maji">Maji</button>
                         <button class="filter-btn" data-category="bebe">Produits bébé</button>
                         <button class="filter-btn" data-category="kits">Kits alimentaires</button>
+                        <button class="filter-btn" data-category="alcools">Alcools</button>
                     </div>
                 </div>
                 
