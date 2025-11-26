@@ -435,28 +435,6 @@ const products = [
     { id: 'p25', name: 'Kit pâtes', price: 1500, category: 'kits', image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400' },
 ];
 
-// Ensure each 'alimentaires' product has a stable image URL (Unsplash search-based)
-// This sets `product.image` so deployed sites will use explicit URLs rather than
-// relying on runtime-only rendering logic.
-products.forEach(p => {
-    try {
-        if (p && p.category === 'alimentaires') {
-            const raw = (p.name || '').toString();
-            const cleaned = raw.replace(/\([^)]*\)/g, '')
-                                .replace(/[^a-zA-Z0-9\s-]/g, ' ')
-                                .replace(/\s+/g, ' ')
-                                .trim()
-                                .toLowerCase()
-                                .slice(0, 60);
-            const query = encodeURIComponent(cleaned || 'alimentaire');
-            // Use source.unsplash to get a relevant image; 600x600 for better quality
-            p.image = `https://source.unsplash.com/600x600/?${query}`;
-        }
-    } catch (e) {
-        // ignore and keep existing image if any
-    }
-});
-
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     updateCartCount();
@@ -695,30 +673,10 @@ function attachProductsPageListeners() {
 
 // Product Card Component
 function renderProductCard(product) {
-    // If the product is in 'alimentaires', build a query-based Unsplash image URL
-    let imageUrl = product.image;
-    try {
-        if (product && product.category === 'alimentaires') {
-            // Create a safe query from the product name (remove punctuation, limit length)
-            const raw = (product.name || '').toString();
-            const cleaned = raw.replace(/\([^)]*\)/g, '') // remove parenthesis content
-                                .replace(/[^a-zA-Z0-9\s-]/g, ' ') // remove special chars
-                                .replace(/\s+/g, ' ') // collapse spaces
-                                .trim()
-                                .toLowerCase()
-                                .slice(0, 60); // limit length
-
-            const query = encodeURIComponent(cleaned || 'alimentaire');
-            imageUrl = `https://source.unsplash.com/400x400/?${query}`;
-        }
-    } catch (e) {
-        imageUrl = product.image;
-    }
-
     return `
         <div class="product-card">
             <div class="product-image">
-                <img src="${imageUrl}" alt="${product.name}">
+                <img src="${product.image}" alt="${product.name}">
             </div>
             <div class="product-info">
                 <div class="product-name">${product.name}</div>
