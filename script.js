@@ -433,6 +433,9 @@ const products = [
     // Kits alimentaires
     { id: 'p24', name: 'Kit petit déjeuner', price: 2000, category: 'kits', image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400' },
     { id: 'p25', name: 'Kit pâtes', price: 1500, category: 'kits', image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400' },
+
+    // Bijoux
+    {id:'p30', name: 'chaines', price: '250', category:'Bijoux', image:'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=400'}
 ];
 
 // Initialize
@@ -607,6 +610,8 @@ function renderProductsPage() {
                         <button class="filter-btn" data-category="maji">Maji</button>
                         <button class="filter-btn" data-category="bebe">Produits bébé</button>
                         <button class="filter-btn" data-category="kits">Kits alimentaires</button>
+                        <button class="filter-btn" data-category="Bijoux">Bijoux </button>
+                        
                     </div>
                 </div>
                 
