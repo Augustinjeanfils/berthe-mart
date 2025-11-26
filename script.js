@@ -512,10 +512,7 @@ const products = [
     { id: 'p', name: 'Lessive liquide', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
     { id: 'p', name: 'Adoucissant', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
     
-    // Cosmétiques
-    { id: 'p14', name: 'Crème visage', price: 1800, category: 'cosmetiques', image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400' },
-    { id: 'p15', name: 'Rouge à lèvres', price: 1200, category: 'cosmetiques', image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=400' },
-    
+
     // Parfums
     { id: 'p16', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
     { id: 'p17', name: 'Parfum homme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400' },
