@@ -509,9 +509,10 @@ const products = [
     { id: 'p', name: 'Éponges (pack de 6)', price: 200, category: 'menagers', image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400' },
     
     // Lessive
-    { id: 'p', name: 'Lessive liquide', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
-    { id: 'p', name: 'Adoucissant', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-    
+    { id: 'l1', name: 'Mistolin Campos De Flore ', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l2', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l3', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l4', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
 
     // Parfums
     { id: 'p16', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
@@ -947,7 +948,7 @@ function renderHomePage() {
             <img src="photo_à_propos.jpeg" alt="Market" class="hero-image">
             <div class="hero-content container">
                 <div class="hero-text">
-                    <h1>Bienvenue dans Bon cœur Mini Mart </h1>
+                    <h1>Bienvenue dans Bon Cœur Mini Mart </h1>
                     <p>Produits variés et disponibles chaque jour.</p>
                     <button class="btn btn-primary" onclick="navigateTo('products')">
                         voir les produits 
@@ -1969,3 +1970,5 @@ function goToCart() {
 function attachPaymentListeners() {
     // Listeners are attached inline via onclick
 }
+
+
