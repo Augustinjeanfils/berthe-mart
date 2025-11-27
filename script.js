@@ -1702,7 +1702,7 @@ function renderPaymentPage() {
                     <!-- Digicel -->
                     <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('digicel')">
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <div style="width: 50px; height: 50px; background: #FF6600; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="width: 50px; height: 50px; background: #ff0000ff; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
                             <div style="flex: 1;">
                                 <h4 style="margin: 0; color: var(--gray-900);">Digicel (Mon Cash)</h4>
                                 <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Digicel</p>
@@ -1714,7 +1714,7 @@ function renderPaymentPage() {
                     <!-- Natcom -->
                     <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('natcom')">
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <div style="width: 50px; height: 50px; background: #0099FF; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="width: 50px; height: 50px; background: rgba(255, 132, 0, 1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
                             <div style="flex: 1;">
                                 <h4 style="margin: 0; color: var(--gray-900);">Natcom (Natcash)</h4>
                                 <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Natcom</p>
@@ -1726,7 +1726,7 @@ function renderPaymentPage() {
                     <!-- Virement Bancaire -->
                     <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 2rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('virement')">
                         <div style="display: flex; align-items: center; gap: 1rem;">
-                            <div style="width: 50px; height: 50px; background: #228B22; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">🏦</div>
+                            <div style="width: 50px; height: 50px; background: #0037ffff; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">🏦</div>
                             <div style="flex: 1;">
                                 <h4 style="margin: 0; color: var(--gray-900);">Virement Bancaire</h4>
                                 <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Transfert direct vers notre compte bancaire</p>
@@ -1848,7 +1848,7 @@ function renderNatcomDetails() {
                         <p style="font-size: 1.75rem; font-weight: 700; color: rgba(255, 132, 0, 1); margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
                     </div>
                     
-                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #4CAF50;">
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid rgba(255, 132, 0, 1);">
                         <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Étapes:</h4>
                         <ol style="color: var(--gray-700); padding-left: 1.5rem;">
                             <li>Ouvrez Natcash sur votre téléphone</li>
