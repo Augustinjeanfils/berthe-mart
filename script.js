@@ -513,6 +513,58 @@ const products = [
     { id: 'l2', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
     { id: 'l3', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
     { id: 'l4', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l5', name: ' Savon Citron  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l6', name: ' Mistolin Rocio De Lavanda   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l7', name: ' Mistolin Explosion De Fruit   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l8', name: ' Mistolin Campos De Flore  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l9', name: ' Mistolin  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l10', name: 'Mistolin Campos De Flore ', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l11', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l12', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l13', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l14', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l15', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l16', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l17', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l18', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l19', name: 'Mistolin Campos De Flore ', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l20', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l21', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l22', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l23', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l24', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l25', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l26', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l26', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Parfums
     { id: 'p16', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
