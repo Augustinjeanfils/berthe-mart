@@ -1794,9 +1794,9 @@ function renderDigicelDetails() {
                         <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour vérifier le numéro exact*</p>
                     </div>
                     
-                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF6600;">
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #ff0000ff;">
                         <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
-                        <p style="font-size: 1.75rem; font-weight: 700; color: #FF6600; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #ff0000ff; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
                     </div>
                     
                     <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
@@ -1811,8 +1811,8 @@ function renderDigicelDetails() {
                         </ol>
                     </div>
                     
-                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
-                        <h4 style="margin-top: 0; color: #1565C0;">Après le paiement:</h4>
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Après le paiement:</h4>
                         <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
                     </div>
                     
