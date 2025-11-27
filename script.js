@@ -1051,6 +1051,11 @@ function renderProductsPage() {
                         <button class="filter-btn" data-category="bebe">Produits bébé</button>
                         <button class="filter-btn" data-category="kits">Kits alimentaires</button>
                         <button class="filter-btn" data-category="alcools">Alcools</button>
+                        <button class="filter-btn" data-category="bijoux">Bijoux</button>
+                        <button class="filter-btn" data-category="cartes">Cartes de vœux</button>
+                        <button class="filter-btn" data-category="paniers">Paniers cadeaux</button>
+                        <button class="filter-btn" data-category="tabac">Tabac</button>
+                        <button class="filter-btn" data-category="insecticides">Insecticides</button>
                     </div>
                 </div>
                 
