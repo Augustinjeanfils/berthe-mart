@@ -1832,7 +1832,7 @@ function renderNatcomDetails() {
             <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
                 <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: rgba(255, 132, 0, 1);">Paiement Natcom (Natcash)</h1>
                 
-                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #0099FF;">
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid rgba(255, 132, 0, 1);">
                     <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
                     
                     <div style="background: #E0F7FF; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
