@@ -1796,11 +1796,11 @@ function renderDigicelDetails() {
                     
                     <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF6600;">
                         <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
-                        <p style="font-size: 1.75rem; font-weight: 700; color: #ff0000ff; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #FF6600; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
                     </div>
                     
-                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #c02828ff;">
-                        <h4 style="margin-top: 0; color: #2E7D32;">Étapes:</h4>
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Étapes:</h4>
                         <ol style="color: var(--gray-700); padding-left: 1.5rem;">
                             <li>Ouvrez Mon Cash sur votre téléphone</li>
                             <li>Sélectionnez "Paiement de services"</li>
