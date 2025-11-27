@@ -397,7 +397,84 @@ const products = [
     { id: 'p366', name: 'GREEN LAND 900G', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     { id: 'p367', name: 'SPORT SHAKE VANILLA', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     { id: 'p368', name: 'LAIT NURSIE', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p369', name: 'Chip chop Chips ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p370', name: 'Fritos Original Chips ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p371', name: 'Pringles 4G', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p372', name: ' Bon Cœur Chips ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p373', name: 'Viere Super Papita Banani Chips ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p374', name: 'Crunchitos Fromage ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p375', name: 'Potato Chips Original ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p376', name: 'potato Chips Sour Cream ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p377', name: 'Potato Chips Cheese', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p378', name: 'Pringles Original Petit', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p379', name: 'Cheetos Crunchy', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p380', name: 'Doritos Nacho Cheese', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p381', name: 'Ruffles Original ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p382', name: 'Cheeco Jumbo Palitos ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p383', name: 'Cheeco Cheese Anillos ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p384', name: 'Chips Banane (Petite)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p385', name: 'Chips Banane (Gros)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p386', name: 'Chiritos Pop Corn', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p387', name: 'Chips Pomme De Terre (Petit)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p388', name: 'Pascual Big Day', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p389', name: 'Bon CŒUR Corn Flakes (Gros)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p390', name: 'Bon CŒUR Corn Flakes (Petit)', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p391', name: ' Corn Flakes La Perla', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p392', name: 'Chips Vierge Super Papita Pomme De Terre ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' }, 
+    { id: 'p393', name: 'Chips Vierge Super Patate', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p394', name: 'Lays Classic ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p395', name: 'Crunchitos Cheaddar  ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
+    { id: 'p396', name: 'Chips Vierge Super Papita Banane ', price: '', category: 'alimentaires', image: 'https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=400' },
     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Produits glacés 
     { id: 'g1', name: 'SEJOURNE CREME SODA', price: '', category: 'glaces', image: 'https://images.unsplash.com/photo-1554866585-51a9e2ec6a4f?w=400' },
     { id: 'g2', name: 'FANTA FRAMBOISE', price: '', category: 'glaces', image: 'https://images.unsplash.com/photo-1554866585-51a9e2ec6a4f?w=400' },
@@ -509,12 +586,65 @@ const products = [
     { id: 'p', name: 'Éponges (pack de 6)', price: 200, category: 'menagers', image: 'https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400' },
     
     // Lessive
-    { id: 'p', name: 'Lessive liquide', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
-    { id: 'p', name: 'Adoucissant', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-    
+    { id: 'l1', name: 'Mistolin Campos De Flore ', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l2', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l3', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l4', name: ' Mistolin Brisa Maria  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l5', name: ' Savon Citron  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l6', name: ' Mistolin Rocio De Lavanda   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l7', name: ' Mistolin Explosion De Fruit   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l8', name: ' Mistolin Campos De Flore  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l9', name: ' Mistolin  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l10', name: 'Mistolin Campos De Flore ', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l11', name: 'Liquide Lessive ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l12', name: ' Mistolin Rocio De Lavanda  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l13', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l14', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l15', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l16', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l17', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l18', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l19', name: '', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
+    { id: 'l20', name: ' ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l21', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l22', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l23', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l24', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l25', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l26', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+    { id: 'l26', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     // Parfums
-    { id: 'p16', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
+    { id: 'p1', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
     { id: 'p17', name: 'Parfum homme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400' },
     
     // Hygiène
@@ -526,10 +656,86 @@ const products = [
     { id: 'p21', name: 'Eau gazeuse', price: 200, category: 'maji', image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f0e?w=400' },
     
     // Produits bébé 
-    { id: 'p22', name: 'Couches bébé', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'p23', name: 'Lingettes bébé', price: 600, category: 'bebe', image: 'https://images.unsplash.com/photo-1602641056105-7c4e85a6096d?w=400' },
-    
-    // Kits alimentaires
+    { id: 'b1', name: 'Actimed Bebe ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b2', name: 'Alvin island ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b3', name: 'Diaper Bon CŒUR (Medium)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b4', name: 'Alvin And The Chip Munks ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b5', name: 'Diapers ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b6', name: 'Diapers Comfort (Large) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b7', name: 'Actimed Bebe (Batonnets)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b8', name: 'Actimed Bebe ( Eau De Cologne)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b9', name: 'Alokozay Baby Daipers (3ans) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b10', name: 'Actimed ( Douceur Coton)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b11', name: 'Alokozay Baby Diapers 4+', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b12', name: 'Jhonson Baby Powder ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b13', name: 'Jhonson Bleue ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b14', name: 'Actimed Bebe (Huile)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b15', name: 'Actimed Bebe (Lotion) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b16', name: 'Jhonsons Rose ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b17', name: 'Jhonsons Blossoms Baby', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b18', name: ' Happy Dora ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b19', name: 'Diapers Bobebe (Medium)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b20', name: 'Diapers Bobebe (Large)', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b21', name: 'Alokozay Baby Diapers (2ans) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b22', name: 'Diapers Icona Med ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b23', name: 'Diapers Pull Up (x-large) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b24', name: 'Kalinou Baby Diapers ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b25', name: 'Boy Naughty ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b26', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b27', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b28', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b29', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b30', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b31', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b32', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b33', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b34', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b35', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b36', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b37', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b38', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b39', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b40', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b41', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b42', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+    { id: 'b43', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // kits 
     { id: 'p24', name: 'Kit petit déjeuner', price: 2000, category: 'kits', image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400' },
     { id: 'p25', name: 'Kit pâtes', price: 1500, category: 'kits', image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400' },
     
@@ -947,7 +1153,7 @@ function renderHomePage() {
             <img src="photo_à_propos.jpeg" alt="Market" class="hero-image">
             <div class="hero-content container">
                 <div class="hero-text">
-                    <h1>Bienvenue dans Bon cœur Mini Mart </h1>
+                    <h1>Bienvenue dans Bon Cœur Mini Mart </h1>
                     <p>Produits variés et disponibles chaque jour.</p>
                     <button class="btn btn-primary" onclick="navigateTo('products')">
                         voir les produits 
@@ -1614,11 +1820,11 @@ function renderCartPage() {
                             <span>Total</span>
                             <span class="total-amount">${getCartTotal()} GDS</span>
                         </div>
-                        <button class="btn btn-green order-btn" onclick="placeOrder()">
+                        <button class="btn btn-green order-btn" onclick="goToPayment()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             </svg>
-                            Commander maintenant
+                            Procéder au paiement
                         </button>
                         <p class="form-note">Votre commande sera envoyée via WhatsApp</p>
                         
@@ -1662,3 +1868,312 @@ function placeOrder() {
     
     window.open(`https://wa.me/50942936443?text=${encodeURIComponent(message)}`, '_blank');
 }
+
+function goToPayment() {
+    if (cart.length === 0) return;
+    currentPage = 'payment';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = renderPaymentPage();
+    attachPaymentListeners();
+}
+
+function renderPaymentPage() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Choisir un moyen de paiement</h1>
+                
+                <!-- Order Summary -->
+                <div class="payment-summary" style="background: white; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border: 1px solid var(--gray-200);">
+                    <h3 style="margin-bottom: 1rem; color: var(--gray-900);">Résumé de votre commande</h3>
+                    <div style="max-height: 200px; overflow-y: auto; margin-bottom: 1rem;">
+                        ${cart.map(item => `
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-200);">
+                                <span>${item.name} x${item.quantity}</span>
+                                <span style="font-weight: 600;">${item.price * item.quantity} GDS</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <hr style="border: none; border-top: 2px solid var(--gray-300); margin: 1rem 0;">
+                    <div style="display: flex; justify-content: space-between; font-size: 1.25rem; font-weight: 700; color: var(--red-600);">
+                        <span>Total à payer:</span>
+                        <span>${getCartTotal()} GDS</span>
+                    </div>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--gray-900);">Sélectionner un moyen de paiement</h3>
+                    
+                    <!-- Digicel -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('digicel')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #ff0000ff; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Digicel (Mon Cash)</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Digicel</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="digicel" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                    
+                    <!-- Natcom -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('natcom')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(255, 132, 0, 1); border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Natcom (Natcash)</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Natcom</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="natcom" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                    
+                    <!-- Virement Bancaire -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 2rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('virement')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #0037ffff; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">🏦</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Virement Bancaire</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Transfert direct vers notre compte bancaire</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="virement" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-secondary" onclick="goToCart()" style="flex: 1;">Retour au panier</button>
+                    <button class="btn btn-green" onclick="confirmPayment()" style="flex: 1;">Continuer</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function selectPayment(method) {
+    const radios = document.querySelectorAll('input[name="payment-method"]');
+    radios.forEach(r => r.checked = false);
+    const selected = document.querySelector(`input[value="${method}"]`);
+    if (selected) selected.checked = true;
+    localStorage.setItem('selectedPaymentMethod', method);
+}
+
+function confirmPayment() {
+    const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
+    if (!selectedMethod) {
+        alert('Veuillez sélectionner un moyen de paiement');
+        return;
+    }
+    
+    const method = selectedMethod.value;
+    let detailsPageHtml = '';
+    
+    if (method === 'digicel') {
+        detailsPageHtml = renderDigicelDetails();
+    } else if (method === 'natcom') {
+        detailsPageHtml = renderNatcomDetails();
+    } else if (method === 'virement') {
+        detailsPageHtml = renderVirementDetails();
+    }
+    
+    currentPage = 'payment-details';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = detailsPageHtml;
+}
+
+function renderDigicelDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #ff0000ff;">Paiement Digicel (Mon Cash)</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #fa0303ff;">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
+                    
+                    <div style="background: #FFF5E6; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Numéro de paiement Digicel:</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
+                            +509 44672283
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour vérifier le numéro exact*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #ff0000ff; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Étapes:</h4>
+                        <ol style="color: var(--gray-700); padding-left: 1.5rem;">
+                            <li>Ouvrez Mon Cash sur votre téléphone</li>
+                            <li>Sélectionnez "Paiement de services"</li>
+                            <li>Entrez le numéro Berthe Mart (voir ci-dessus)</li>
+                            <li>Confirmez le montant: <strong>${getCartTotal()} GDS</strong></li>
+                            <li>Validez la transaction</li>
+                            <li>Prenez une capture d'écran de la confirmation</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #000000ff;">
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Après le paiement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('digicel')" style="flex: 1;">Paiement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderNatcomDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: rgba(255, 132, 0, 1);">Paiement Natcom (Natcash)</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid rgba(255, 132, 0, 1);">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
+                    
+                    <div style="background: #E0F7FF; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Numéro de paiement Natcom:</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
+                            +509 42936443
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour vérifier le numéro exact*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid rgba(255, 132, 0, 1);">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: rgba(255, 132, 0, 1); margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid rgba(255, 132, 0, 1);">
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Étapes:</h4>
+                        <ol style="color: var(--gray-700); padding-left: 1.5rem;">
+                            <li>Ouvrez Natcash sur votre téléphone</li>
+                            <li>Sélectionnez "Transfert d'argent"</li>
+                            <li>Entrez le numéro Berthe Mart (voir ci-dessus)</li>
+                            <li>Confirmez le montant: <strong>${getCartTotal()} GDS</strong></li>
+                            <li>Validez la transaction</li>
+                            <li>Prenez une capture d'écran de la confirmation</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid rgba(255, 132, 0, 1);">
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Après le paiement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('natcom')" style="flex: 1;">Paiement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderVirementDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #228B22;">Virement Bancaire</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #228B22;">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Informations bancaires</h3>
+                    
+                    <div style="background: #F1F8E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: #228B22;">Détails du compte:</h4>
+                        <div style="font-family: monospace; color: var(--gray-900); line-height: 1.8;">
+                            <p style="margin: 0.5rem 0;"><strong>Banque:</strong> XXXXXXXXXX </p>
+                            <p style="margin: 0.5rem 0;"><strong>Titulaire:</strong> XXXXXXXXX</p>
+                            <p style="margin: 0.5rem 0;"><strong>Numéro de compte:</strong> XXXXXXXXXXXX</p>
+                            <p style="margin: 0.5rem 0;"><strong>Code Swift/IBAN:</strong> XXXXXXXX</p>
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Veuillez nous contacter pour les informations complètes*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #228B22;">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à virer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #228B22; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #FFF3E0; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF9800;">
+                        <h4 style="margin-top: 0; color: #E65100;">Important:</h4>
+                        <ul style="color: var(--gray-700); margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                            <li>Utilisez comme référence votre numéro de commande</li>
+                            <li>Vérifiez les frais bancaires (généralement à votre charge)</li>
+                            <li>Conservez la preuve du virement</li>
+                            <li>Contactez-nous pour confirmer la réception</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
+                        <h4 style="margin-top: 0; color: #1565C0;">Après le virement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Envoyez-nous une capture d'écran de la confirmation du virement via WhatsApp avec votre numéro de commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('virement')" style="flex: 1;">Virement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function completeOrder(paymentMethod) {
+    if (cart.length === 0) return;
+    
+    const methodLabel = paymentMethod === 'digicel' ? 'Digicel (Mon Cash)' : 
+                       paymentMethod === 'natcom' ? 'Natcom (Natcash)' : 'Virement Bancaire';
+    
+    let message = '🛒 *Nouvelle Commande Market*\n\n';
+    message += `*Moyen de paiement:* ${methodLabel}\n\n`;
+    message += '*Produits commandés:*\n';
+    
+    cart.forEach((item, index) => {
+        message += `\n${index + 1}. ${item.name}\n`;
+        message += `   • Quantité: ${item.quantity}\n`;
+        message += `   • Prix unitaire: ${item.price} GDS\n`;
+        message += `   • Sous-total: ${item.price * item.quantity} GDS\n`;
+    });
+    
+    message += `\n━━━━━━━━━━━━━━━━━━\n`;
+    message += `*TOTAL: ${getCartTotal()} GDS*\n`;
+    message += `━━━━━━━━━━━━━━━━━━\n\n`;
+    message += `*Veuillez envoyer la preuve de paiement pour confirmer votre commande*\n`;
+    message += `Merci! 🙏`;
+    
+    window.open(`https://wa.me/50942936443?text=${encodeURIComponent(message)}`, '_blank');
+    
+    // Clear cart after order
+    setTimeout(() => {
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        currentPage = 'home';
+        loadPage();
+    }, 500);
+}
+
+function goToCart() {
+    currentPage = 'cart';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = renderCartPage();
+    attachCartListeners();
+}
+
+function attachPaymentListeners() {
+    // Listeners are attached inline via onclick
+}
+
+
