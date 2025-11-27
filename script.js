@@ -1887,10 +1887,10 @@ function renderVirementDetails() {
                     <div style="background: #F1F8E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
                         <h4 style="margin-top: 0; color: #228B22;">Détails du compte:</h4>
                         <div style="font-family: monospace; color: var(--gray-900); line-height: 1.8;">
-                            <p style="margin: 0.5rem 0;"><strong>Banque:</strong> BRH (Banque de la République d'Haïti)</p>
-                            <p style="margin: 0.5rem 0;"><strong>Titulaire:</strong> Berthe Mart S.A.R.L</p>
+                            <p style="margin: 0.5rem 0;"><strong>Banque:</strong> XXXXXXXXXX </p>
+                            <p style="margin: 0.5rem 0;"><strong>Titulaire:</strong> XXXXXXXXX</p>
                             <p style="margin: 0.5rem 0;"><strong>Numéro de compte:</strong> XXXXXXXXXXXX</p>
-                            <p style="margin: 0.5rem 0;"><strong>Code Swift/IBAN:</strong> À demander au support</p>
+                            <p style="margin: 0.5rem 0;"><strong>Code Swift/IBAN:</strong> XXXXXXXX</p>
                         </div>
                         <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Veuillez nous contacter pour les informations complètes*</p>
                     </div>
