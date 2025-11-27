@@ -1614,11 +1614,11 @@ function renderCartPage() {
                             <span>Total</span>
                             <span class="total-amount">${getCartTotal()} GDS</span>
                         </div>
-                        <button class="btn btn-green order-btn" onclick="placeOrder()">
+                        <button class="btn btn-green order-btn" onclick="goToPayment()">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                             </svg>
-                            Commander maintenant
+                            Procéder au paiement
                         </button>
                         <p class="form-note">Votre commande sera envoyée via WhatsApp</p>
                         
@@ -1661,4 +1661,311 @@ function placeOrder() {
     message += `Merci de confirmer la disponibilité et le délai de livraison.`;
     
     window.open(`https://wa.me/50942936443?text=${encodeURIComponent(message)}`, '_blank');
+}
+
+function goToPayment() {
+    if (cart.length === 0) return;
+    currentPage = 'payment';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = renderPaymentPage();
+    attachPaymentListeners();
+}
+
+function renderPaymentPage() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Choisir un moyen de paiement</h1>
+                
+                <!-- Order Summary -->
+                <div class="payment-summary" style="background: white; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border: 1px solid var(--gray-200);">
+                    <h3 style="margin-bottom: 1rem; color: var(--gray-900);">Résumé de votre commande</h3>
+                    <div style="max-height: 200px; overflow-y: auto; margin-bottom: 1rem;">
+                        ${cart.map(item => `
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--gray-200);">
+                                <span>${item.name} x${item.quantity}</span>
+                                <span style="font-weight: 600;">${item.price * item.quantity} GDS</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <hr style="border: none; border-top: 2px solid var(--gray-300); margin: 1rem 0;">
+                    <div style="display: flex; justify-content: space-between; font-size: 1.25rem; font-weight: 700; color: var(--red-600);">
+                        <span>Total à payer:</span>
+                        <span>${getCartTotal()} GDS</span>
+                    </div>
+                </div>
+                
+                <!-- Payment Methods -->
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="margin-bottom: 1rem; color: var(--gray-900);">Sélectionner un moyen de paiement</h3>
+                    
+                    <!-- Digicel -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('digicel')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #FF6600; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Digicel (Mon Cash)</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Digicel</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="digicel" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                    
+                    <!-- Natcom -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 1rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('natcom')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #0099FF; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">📱</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Natcom (Natcash)</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Paiement mobile money Natcom</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="natcom" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                    
+                    <!-- Virement Bancaire -->
+                    <div class="payment-option" style="background: white; border: 2px solid var(--gray-200); border-radius: 0.5rem; padding: 1.5rem; margin-bottom: 2rem; cursor: pointer; transition: all 0.3s;" onclick="selectPayment('virement')">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: #228B22; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">🏦</div>
+                            <div style="flex: 1;">
+                                <h4 style="margin: 0; color: var(--gray-900);">Virement Bancaire</h4>
+                                <p style="margin: 0.25rem 0 0 0; color: var(--gray-600);">Transfert direct vers notre compte bancaire</p>
+                            </div>
+                            <input type="radio" name="payment-method" value="virement" style="width: 20px; height: 20px;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Buttons -->
+                <div style="display: flex; gap: 1rem;">
+                    <button class="btn btn-secondary" onclick="goToCart()" style="flex: 1;">Retour au panier</button>
+                    <button class="btn btn-green" onclick="confirmPayment()" style="flex: 1;">Continuer</button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function selectPayment(method) {
+    const radios = document.querySelectorAll('input[name="payment-method"]');
+    radios.forEach(r => r.checked = false);
+    const selected = document.querySelector(`input[value="${method}"]`);
+    if (selected) selected.checked = true;
+    localStorage.setItem('selectedPaymentMethod', method);
+}
+
+function confirmPayment() {
+    const selectedMethod = document.querySelector('input[name="payment-method"]:checked');
+    if (!selectedMethod) {
+        alert('Veuillez sélectionner un moyen de paiement');
+        return;
+    }
+    
+    const method = selectedMethod.value;
+    let detailsPageHtml = '';
+    
+    if (method === 'digicel') {
+        detailsPageHtml = renderDigicelDetails();
+    } else if (method === 'natcom') {
+        detailsPageHtml = renderNatcomDetails();
+    } else if (method === 'virement') {
+        detailsPageHtml = renderVirementDetails();
+    }
+    
+    currentPage = 'payment-details';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = detailsPageHtml;
+}
+
+function renderDigicelDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #FF6600;">Paiement Digicel (Mon Cash)</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #FF6600;">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
+                    
+                    <div style="background: #FFF5E6; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: #FF6600;">Numéro de paiement Digicel:</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
+                            +509 XX XX XXXX
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour le numéro exact*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF6600;">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #FF6600; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #4CAF50;">
+                        <h4 style="margin-top: 0; color: #2E7D32;">Étapes:</h4>
+                        <ol style="color: var(--gray-700); padding-left: 1.5rem;">
+                            <li>Ouvrez Mon Cash sur votre téléphone</li>
+                            <li>Sélectionnez "Paiement de services"</li>
+                            <li>Entrez le numéro Berthe Mart (voir ci-dessus)</li>
+                            <li>Confirmez le montant: <strong>${getCartTotal()} GDS</strong></li>
+                            <li>Validez la transaction</li>
+                            <li>Prenez une capture d'écran de la confirmation</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
+                        <h4 style="margin-top: 0; color: #1565C0;">Après le paiement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('digicel')" style="flex: 1;">Paiement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderNatcomDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #0099FF;">Paiement Natcom (Natcash)</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #0099FF;">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
+                    
+                    <div style="background: #E0F7FF; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: #0099FF;">Numéro de paiement Natcom:</h4>
+                        <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
+                            +509 XX XX XXXX
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour le numéro exact*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #0099FF;">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à envoyer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #0099FF; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #4CAF50;">
+                        <h4 style="margin-top: 0; color: #2E7D32;">Étapes:</h4>
+                        <ol style="color: var(--gray-700); padding-left: 1.5rem;">
+                            <li>Ouvrez Natcash sur votre téléphone</li>
+                            <li>Sélectionnez "Transfert d'argent"</li>
+                            <li>Entrez le numéro Berthe Mart (voir ci-dessus)</li>
+                            <li>Confirmez le montant: <strong>${getCartTotal()} GDS</strong></li>
+                            <li>Validez la transaction</li>
+                            <li>Prenez une capture d'écran de la confirmation</li>
+                        </ol>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
+                        <h4 style="margin-top: 0; color: #1565C0;">Après le paiement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('natcom')" style="flex: 1;">Paiement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function renderVirementDetails() {
+    return `
+        <div class="section section-gray" style="min-height: 100vh;">
+            <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
+                <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #228B22;">Virement Bancaire</h1>
+                
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #228B22;">
+                    <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Informations bancaires</h3>
+                    
+                    <div style="background: #F1F8E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
+                        <h4 style="margin-top: 0; color: #228B22;">Détails du compte:</h4>
+                        <div style="font-family: monospace; color: var(--gray-900); line-height: 1.8;">
+                            <p style="margin: 0.5rem 0;"><strong>Banque:</strong> BRH (Banque de la République d'Haïti)</p>
+                            <p style="margin: 0.5rem 0;"><strong>Titulaire:</strong> Berthe Mart S.A.R.L</p>
+                            <p style="margin: 0.5rem 0;"><strong>Numéro de compte:</strong> XXXXXXXXXXXX</p>
+                            <p style="margin: 0.5rem 0;"><strong>Code Swift/IBAN:</strong> À demander au support</p>
+                        </div>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Veuillez nous contacter pour les informations complètes*</p>
+                    </div>
+                    
+                    <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #228B22;">
+                        <h4 style="margin-top: 0; color: var(--gray-900);">Montant à virer:</h4>
+                        <p style="font-size: 1.75rem; font-weight: 700; color: #228B22; margin: 0.5rem 0 0 0;">${getCartTotal()} GDS</p>
+                    </div>
+                    
+                    <div style="background: #FFF3E0; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF9800;">
+                        <h4 style="margin-top: 0; color: #E65100;">Important:</h4>
+                        <ul style="color: var(--gray-700); margin: 0.5rem 0 0 0; padding-left: 1.5rem;">
+                            <li>Utilisez comme référence votre numéro de commande</li>
+                            <li>Vérifiez les frais bancaires (généralement à votre charge)</li>
+                            <li>Conservez la preuve du virement</li>
+                            <li>Contactez-nous pour confirmer la réception</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
+                        <h4 style="margin-top: 0; color: #1565C0;">Après le virement:</h4>
+                        <p style="color: var(--gray-700); margin: 0;">Envoyez-nous une capture d'écran de la confirmation du virement via WhatsApp avec votre numéro de commande.</p>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+                        <button class="btn btn-secondary" onclick="goToPayment()" style="flex: 1;">Retour</button>
+                        <button class="btn btn-green" onclick="completeOrder('virement')" style="flex: 1;">Virement effectué</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function completeOrder(paymentMethod) {
+    if (cart.length === 0) return;
+    
+    const methodLabel = paymentMethod === 'digicel' ? 'Digicel (Mon Cash)' : 
+                       paymentMethod === 'natcom' ? 'Natcom (Natcash)' : 'Virement Bancaire';
+    
+    let message = '🛒 *Nouvelle Commande Market*\n\n';
+    message += `*Moyen de paiement:* ${methodLabel}\n\n`;
+    message += '*Produits commandés:*\n';
+    
+    cart.forEach((item, index) => {
+        message += `\n${index + 1}. ${item.name}\n`;
+        message += `   • Quantité: ${item.quantity}\n`;
+        message += `   • Prix unitaire: ${item.price} GDS\n`;
+        message += `   • Sous-total: ${item.price * item.quantity} GDS\n`;
+    });
+    
+    message += `\n━━━━━━━━━━━━━━━━━━\n`;
+    message += `*TOTAL: ${getCartTotal()} GDS*\n`;
+    message += `━━━━━━━━━━━━━━━━━━\n\n`;
+    message += `*Veuillez envoyer la preuve de paiement pour confirmer votre commande*\n`;
+    message += `Merci! 🙏`;
+    
+    window.open(`https://wa.me/50942936443?text=${encodeURIComponent(message)}`, '_blank');
+    
+    // Clear cart after order
+    setTimeout(() => {
+        cart = [];
+        localStorage.setItem('cart', JSON.stringify(cart));
+        currentPage = 'home';
+        loadPage();
+    }, 500);
+}
+
+function goToCart() {
+    currentPage = 'cart';
+    const mainContent = document.getElementById('mainContent');
+    mainContent.innerHTML = renderCartPage();
+    attachCartListeners();
+}
+
+function attachPaymentListeners() {
+    // Listeners are attached inline via onclick
 }
