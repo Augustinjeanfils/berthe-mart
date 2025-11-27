@@ -1849,7 +1849,7 @@ function renderNatcomDetails() {
                     </div>
                     
                     <div style="background: #E8F5E9; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #4CAF50;">
-                        <h4 style="margin-top: 0; color: #2E7D32;">Étapes:</h4>
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Étapes:</h4>
                         <ol style="color: var(--gray-700); padding-left: 1.5rem;">
                             <li>Ouvrez Natcash sur votre téléphone</li>
                             <li>Sélectionnez "Transfert d'argent"</li>
@@ -1860,8 +1860,8 @@ function renderNatcomDetails() {
                         </ol>
                     </div>
                     
-                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #2196F3;">
-                        <h4 style="margin-top: 0; color: #1565C0;">Après le paiement:</h4>
+                    <div style="background: #E3F2FD; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid rgba(255, 132, 0, 1);">
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Après le paiement:</h4>
                         <p style="color: var(--gray-700); margin: 0;">Veuillez nous envoyer la capture d'écran via WhatsApp pour confirmer votre paiement et finaliser votre commande.</p>
                     </div>
                     
