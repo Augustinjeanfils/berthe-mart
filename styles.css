@@ -405,14 +405,26 @@ main {
 
 }
 
-/* Responsive adjustments for phones */
-@media (max-width: 600px) {
+/* Responsive adjustments for small phones */
+@media (max-width: 480px) {
     .product-image {
         height: 150px; /* Reduce height for smaller screens */
     }
 
     .product-image img {
         object-fit: contain; /* Adjust fit for better visibility on smaller screens */
+    }
+}
+
+/* Responsive adjustements for medium and big phone*/
+
+@media (max-width: 600px) {
+    .product-image {
+        height: 180px; /* Adjust height for medium screens */
+    }
+
+    .product-image img {
+        object-fit: cover; /* Maintain cover fit for medium screens */
     }
 }
 
