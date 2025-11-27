@@ -405,6 +405,17 @@ main {
 
 }
 
+/* Responsive adjustments for phones */
+@media (max-width: 600px) {
+    .product-image {
+        height: 150px; /* Reduce height for smaller screens */
+    }
+
+    .product-image img {
+        object-fit: contain; /* Adjust fit for better visibility on smaller screens */
+    }
+}
+
 /* Footer */
 .site-footer {
     background: var(--gray-900);
