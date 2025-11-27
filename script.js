@@ -1783,11 +1783,11 @@ function renderDigicelDetails() {
             <div class="container" style="padding-top: 3rem; padding-bottom: 3rem; max-width: 600px;">
                 <h1 style="font-size: 2rem; margin-bottom: 2rem; text-align: center; color: #ff0000ff;">Paiement Digicel (Mon Cash)</h1>
                 
-                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #ffffffff;">
+                <div class="payment-details" style="background: white; padding: 2rem; border-radius: 0.5rem; border: 2px solid #fa0303ff;">
                     <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
                     
                     <div style="background: #FFF5E6; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
-                        <h4 style="margin-top: 0; color: #FF6600;">Numéro de paiement Digicel:</h4>
+                        <h4 style="margin-top: 0; color: #ff0000ff;">Numéro de paiement Digicel:</h4>
                         <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
                             +509 44672283
                         </div>
