@@ -1836,7 +1836,7 @@ function renderNatcomDetails() {
                     <h3 style="color: var(--gray-900); margin-bottom: 1.5rem;">Instructions de paiement</h3>
                     
                     <div style="background: #E0F7FF; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
-                        <h4 style="margin-top: 0; color: #0099FF;">Numéro de paiement Natcom:</h4>
+                        <h4 style="margin-top: 0; color: rgba(255, 132, 0, 1);">Numéro de paiement Natcom:</h4>
                         <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
                             +509 42936443
                         </div>
