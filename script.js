@@ -1789,9 +1789,9 @@ function renderDigicelDetails() {
                     <div style="background: #FFF5E6; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
                         <h4 style="margin-top: 0; color: #FF6600;">Numéro de paiement Digicel:</h4>
                         <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
-                            +509 XX XX XXXX
+                            +509 44672283
                         </div>
-                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour le numéro exact*</p>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour vérifier le numéro exact*</p>
                     </div>
                     
                     <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #FF6600;">
@@ -1838,9 +1838,9 @@ function renderNatcomDetails() {
                     <div style="background: #E0F7FF; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem;">
                         <h4 style="margin-top: 0; color: #0099FF;">Numéro de paiement Natcom:</h4>
                         <div style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); text-align: center; padding: 1rem; background: white; border-radius: 0.5rem; font-family: monospace;">
-                            +509 XX XX XXXX
+                            +509 42936443
                         </div>
-                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour le numéro exact*</p>
+                        <p style="margin: 1rem 0 0 0; color: var(--gray-600); font-size: 0.9rem;">*Contactez le support pour vérifier le numéro exact*</p>
                     </div>
                     
                     <div style="background: var(--gray-50); padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 2rem; border-left: 4px solid #0099FF;">
