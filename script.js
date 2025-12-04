@@ -683,8 +683,50 @@ const products = [
     { id: 'p17', name: 'Parfum homme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400' },
     
     // Hygiène
-    { id: 'p18', name: 'Savon liquide', price: 400, category: 'hygiene', image: 'https://images.unsplash.com/photo-1585828923994-5bf521fe1d62?w=400' },
-    { id: 'p19', name: 'Dentifrice', price: 350, category: 'hygiene', image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400' },
+    { id: 'h1', name: 'MISTILINE (ROCIO DE LAVANDA) 1.84 L', price: 755, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h2', name: 'ROYAL SISTER 240 mm', price: 130, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h3', name: 'ACTIMED (SERVIETTES COTON)', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h4', name: 'CAMEO (SUPER SOFT) 11 cm', price: 75, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h5', name: 'LIA', price: 115, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h6', name: 'MISTOLINE (CAMPOS DE FLORES NU) 770 ml', price: 335, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h7', name: 'MISTOLINE (ROCIO DE LAVANDA LA) 770 ml', price: 335, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h8', name: 'BUBBLY BABY WIPES', price: 230, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h9', name: 'GLADE', price: 520, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h10', name: 'MYRA (FRESH CARROT)', price: 50, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h11', name: 'GLORY (UITRA SOFT) 10 cm', price: 75, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h12', name: 'SANOGYL SOIN GLOBAL', price: 900, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h13', name: 'ORAL TOTAL (TOOTHBRUSH)', price: 40, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h14', name: 'ACTIMED(SERVIETTES)', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h15', name: 'BOBEBE BABY WIPES', price: 225, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h16', name: 'Manusol hand sanitizer gel', price: 275, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h17', name: 'BABOU 50/M 50/ M', price: 900, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h18', name: 'SENSITIVE & SOFT', price: 210, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h19', name: 'Vitrex 128 FL oz', price: 800, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h20', name: 'LEXI BABY WIPES', price: 165, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h21', name: 'BABOU 50/S', price: 900, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h22', name: 'Kleen 1 gallon', price: 950, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h23', name: 'AJAX', price: 270, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h24', name: 'Caryl orange 1 gallon', price: 950, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h25', name: 'BABOU 50/L', price: 900, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h26', name: 'Caryl 1 gallon', price: 950, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h27', name: 'KOTEX LIA ASSORTIS', price: 115, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h28', name: 'Irish spring assorti', price: 395, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h29', name: 'Irish Spring', price: 135, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h30', name: 'SWAVITEL', price: 435, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h31', name: 'Kotex Actimed', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h32', name: 'ACTIMED (DOUCEUR COTON XXXL 24) 17 kg', price: 1000, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h33', name: 'Balsamine floral', price: 500, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h34', name: 'Balsamine cherry 1 gallon', price: 500, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h35', name: 'ACTIMED(BEBE DOUCEUR COTON L 32 9-14 KG', price: 1000, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    { id: 'h36', name: 'KOTEX ACTIMED MAXI LONGUES', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
+    
+
+
+
+
+
+
+
     
     // Bijoux
     { id: 'b1', name: 'Jeu De Chaine ', price: 250.00, category: 'bijoux', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400' },
@@ -726,24 +768,7 @@ const products = [
     { id: 'b23', name: 'Diapers Pull Up (x-large) ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'b24', name: 'Kalinou Baby Diapers ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'b25', name: 'Boy Naughty ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b26', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b27', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b28', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b29', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b30', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b31', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b32', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b33', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b34', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b35', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b36', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b37', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b38', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b39', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b40', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b41', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b42', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-    { id: 'b43', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
+   
 
     // kits 
     { id: 'p24', name: 'Kit petit déjeuner', price: 2000, category: 'kits', image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400' },
