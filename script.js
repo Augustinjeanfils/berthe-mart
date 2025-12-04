@@ -1089,7 +1089,13 @@ const products = [
 
     //Insecticides 
      { id: 'i1', name: 'Dragon(Rouge)', price: '100', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
-
+     { id: 'i2', name: 'ARROM', price: '120', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+     { id: 'i3', name: 'DRAGON MOSQUITO', price: '110', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+     { id: 'i4', name: 'BAYGON AEROSOL GROS 600ML', price: '810', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+     { id: 'i5', name: 'BAYGON AEROSOL MOY 400ML', price: '610', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+     { id: 'i6', name: 'Dragon', price: '100', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+     { id: 'i7', name: 'BAYGON AEROSOL 285ML', price: '500', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+    
 
 
 
