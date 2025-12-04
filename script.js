@@ -678,51 +678,6 @@ const products = [
     { id: 'l10', name: 'Mistolin Campos De Flores 3.74ML ', price: 1175.00, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
     { id: 'l11', name: 'Sac Fab Lava (Petit) ', price: 2400.00, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
     { id: 'l12', name: ' Mistolin Rocio De Lavanda 3.74ml ', price: 1175.00, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-    //{ id: 'l13', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l14', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l15', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l16', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l17', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l18', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l19', name: '', price: 800, category: 'lessive', image: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400' },
-   // { id: 'l20', name: ' ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l21', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l22', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l23', name: '  ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l24', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l25', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l26', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-   // { id: 'l26', name: '   ', price: 550, category: 'lessive', image: 'https://images.unsplash.com/photo-1627482235840-2f0d9c2d0c8e?w=400' },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     // Parfums
     { id: 'p1', name: 'Parfum femme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1541643600914-78b084683601?w=400' },
     { id: 'p17', name: 'Parfum homme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400' },
@@ -731,11 +686,20 @@ const products = [
     { id: 'p18', name: 'Savon liquide', price: 400, category: 'hygiene', image: 'https://images.unsplash.com/photo-1585828923994-5bf521fe1d62?w=400' },
     { id: 'p19', name: 'Dentifrice', price: 350, category: 'hygiene', image: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400' },
     
-    // Maji (Eau)
-    { id: 'p20', name: 'Eau minérale 6x1.5L', price: 450, category: 'maji', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400' },
-    { id: 'p21', name: 'Eau gazeuse', price: 200, category: 'maji', image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f0e?w=400' },
-    { id: 'P22', name: 'FLORIDA WATER', price: '', category: 'maji', image: 'Pr_cos/florida.JPg'},
+    // Bijoux
+    { id: 'b1', name: 'Jeu De Chaine ', price: 250.00, category: 'bijoux', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400' },
+    { id: 'b2', name: 'CHAINE STAINLESS ASSORTI ', price: 400.00, category: 'bijoux', image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f0e?w=400' },
+    { id: 'b3', name: 'CHAINE STAINLESS ASSORTI', price: 750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b4', name: 'Montre Assorti', price: 600.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b5', name: 'Jeu de Montre Noir Femme ', price: 1000.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b6', name: 'Jeu de Montre Rouge Femme', price: 1000.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b7', name: 'Jeu de Montre Beige Homme ', price: 1750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b8', name: 'Jeu de Montre Beige Femme ', price: 1750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b9', name: 'Montre homme ', price: 1750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b10', name: 'Montre femme ', price: 1000.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
+    { id: 'b11', name: 'Montre Stainless femme ', price: 1750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
     
+
     // Produits bébé 
     { id: 'b1', name: 'Actimed Bebe ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'b2', name: 'Alvin island ', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
@@ -780,41 +744,6 @@ const products = [
     { id: 'b41', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'b42', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
     { id: 'b43', name: '', price: 1500, category: 'bebe', image: 'https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?w=400' },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // kits 
     { id: 'p24', name: 'Kit petit déjeuner', price: 2000, category: 'kits', image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400' },
