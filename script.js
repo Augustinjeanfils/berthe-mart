@@ -683,7 +683,6 @@ const products = [
     { id: 'p17', name: 'Parfum homme', price: 3500, category: 'parfums', image: 'https://images.unsplash.com/photo-1587017539504-67cfbddac569?w=400' },
     
     // Hygiène
-    { id: 'h1', name: 'MISTILINE (ROCIO DE LAVANDA) 1.84 L', price: 755, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
     { id: 'h2', name: 'ROYAL SISTER 240 mm', price: 130, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
     { id: 'h3', name: 'ACTIMED (SERVIETTES COTON)', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
     { id: 'h4', name: 'CAMEO (SUPER SOFT) 11 cm', price: 75, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
@@ -719,16 +718,7 @@ const products = [
     { id: 'h34', name: 'Balsamine cherry 1 gallon', price: 500, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
     { id: 'h35', name: 'ACTIMED(BEBE DOUCEUR COTON L 32 9-14 KG', price: 1000, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
     { id: 'h36', name: 'KOTEX ACTIMED MAXI LONGUES', price: 125, category: 'hygiene', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400' },
-    
-
-
-
-
-
-
-
-    
-    // Bijoux
+     // Bijoux
     { id: 'b1', name: 'Jeu De Chaine ', price: 250.00, category: 'bijoux', image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400' },
     { id: 'b2', name: 'CHAINE STAINLESS ASSORTI ', price: 400.00, category: 'bijoux', image: 'https://images.unsplash.com/photo-1523677011781-c91d1bbe2f0e?w=400' },
     { id: 'b3', name: 'CHAINE STAINLESS ASSORTI', price: 750.00, category: 'bijoux', image: 'Pr_cos/florida.JPg'},
@@ -1096,6 +1086,15 @@ const products = [
     { id: 'c270', name: 'AXE BLACK DEO', price: '', category: 'cosmetiques', image: 'https://source.unsplash.com/600x600/?deodorant' },
     { id: 'c271', name: 'WHITE RAM SHAMPOO (APPLE)', price: '', category: 'cosmetiques', image: 'https://source.unsplash.com/600x600/?shampoo' },
     { id: 'c272', name: 'REXONA (SEXY BOUQUET)', price: '', category: 'cosmetiques', image: 'https://source.unsplash.com/600x600/?deodorant' },
+
+    //Insecticides 
+     { id: 'i1', name: 'Dragon(Rouge)', price: '100', category: 'insecticides', image: 'https://source.unsplash.com/600x600/?deodorant' },
+
+
+
+
+
+
 ];
 
 // Fix broken image URLs: replace source.unsplash.com with working Unsplash photo URLs
