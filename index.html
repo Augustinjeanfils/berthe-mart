@@ -19,7 +19,6 @@
                     </div>
                     <span class="logo-text">Bon Cœur Mini Mart</span>
                 </div>
-<div id="product-list"></div>
 
                 <!-- Navigation Desktop -->
                 <nav class="nav-desktop">
@@ -76,16 +75,22 @@
                     <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
                 </ul>
             </div>
- <div id="admin-panel" style="display:none; padding:20px; border:1px solid black;">
+ <button id="admin-btn" style="margin:20px;">Admin</button>
+
+<div id="admin-panel" style="display:none; padding:20px; border:1px solid black;">
     <h2>Section Admin</h2>
 
-    <input id="product-name" type="text" placeholder="Nom du produit">
-    <input id="product-price" type="text" placeholder="Prix">
-    <input id="product-img" type="text" placeholder="URL de l’image">
-    <input id="product-category" type="text" placeholder="Catégorie">
+    <input id="product-name" type="text" placeholder="Nom du produit"><br><br>
+    <input id="product-price" type="text" placeholder="Prix"><br><br>
+    <input id="product-category" type="text" placeholder="Catégorie"><br><br>
+
+    <label>Choisir une photo :</label><br>
+    <input id="product-img-file" type="file" accept="image/*"><br><br>
 
     <button id="add-product-btn">Ajouter le produit</button>
 </div>
+
+<div id="product-list"></div>
 
            
             <div class="footer-col contact">
