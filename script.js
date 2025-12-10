@@ -2241,4 +2241,114 @@ function attachPaymentListeners() {
     // Listeners are attached inline via onclick
 }
 
+/* -----------------------------------------------------
+   CONFIGURATION ADMIN
+   ----------------------------------------------------- */
+const ADMIN_PASSWORD = "1234"; // <<< Change le mot de passe ici
+
+
+
+/* -----------------------------------------------------
+   FONCTION : Vérifie le mot de passe admin
+   ----------------------------------------------------- */
+function checkAdminPassword() {
+    const inputPass = document.getElementById("admin-pass").value;
+
+    if (inputPass === ADMIN_PASSWORD) {
+
+        // Cache la zone login
+        document.getElementById("login-section").style.display = "none";
+
+        // Affiche le panneau admin
+        document.getElementById("admin-panel").style.display = "block";
+
+    } else {
+        document.getElementById("admin-error").textContent = "Mot de passe incorrect.";
+    }
+}
+
+
+
+/* -----------------------------------------------------
+   FONCTION : Ajouter un produit
+   -----------------------------------------------------
+   Récupère les valeurs :
+   - nom
+   - prix
+   - fichier image
+   Convertit l'image en Base64 pour la stocker.
+   ----------------------------------------------------- */
+function addProduct() {
+
+    const name = document.getElementById("p-name").value;
+    const price = document.getElementById("p-price").value;
+    const file = document.getElementById("p-image").files[0];
+
+    // Vérification simple
+    if (!name || !price || !file) {
+        alert("Veuillez remplir tous les champs.");
+        return;
+    }
+
+    const reader = new FileReader();
+
+    reader.onload = function(event) {
+
+        // Création d’un objet produit
+        const newProduct = {
+            name: name,
+            price: price,
+            image: event.target.result // Image encodée en Base64
+        };
+
+        // Récupération des anciens produits
+        let products = JSON.parse(localStorage.getItem("products")) || [];
+
+        // Ajout du nouveau produit
+        products.push(newProduct);
+
+        // Sauvegarde dans le localStorage
+        localStorage.setItem("products", JSON.stringify(products));
+
+        alert("Produit ajouté avec succès !");
+    };
+
+    reader.readAsDataURL(file);
+}
+
+
+
+/* -----------------------------------------------------
+   FONCTION : Afficher les produits sur le site
+   -----------------------------------------------------
+   À appeler dans ta page boutique :
+   showProducts();
+   ----------------------------------------------------- */
+function showProducts() {
+
+    const container = document.getElementById("products-container");
+
+    // Sécurité si l’élément n’existe pas
+    if (!container) return;
+
+    const products = JSON.parse(localStorage.getItem("products")) || [];
+
+    container.innerHTML = ""; // Nettoyage
+
+    products.forEach(prod => {
+
+        // Création du bloc produit
+        const item = document.createElement("div");
+
+        item.classList.add("product");
+
+        item.innerHTML = `
+            <img src="${prod.image}" class="product-img">
+            <h3>${prod.name}</h3>
+            <p>${prod.price} HTG</p>
+        `;
+
+        container.appendChild(item);
+ });
+}
 

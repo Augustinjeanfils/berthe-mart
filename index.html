@@ -76,6 +76,19 @@
                 </ul>
             </div>
 
+            <div id="login-section">
+    <input type="password" id="admin-pass">
+    <button onclick="checkAdminPassword()">Entrer</button>
+    <p id="admin-error"></p>
+</div>
+
+<div id="admin-panel" style="display:none;">
+    <input type="text" id="p-name" placeholder="Nom du produit">
+    <input type="number" id="p-price" placeholder="Prix">
+    <input type="file" id="p-image">
+    <button onclick="addProduct()">Ajouter</button>
+</div>
+
             <div class="footer-col contact">
                 <h4>Contact</h4>
                 <p>Tél: <a href="tel:+50942936443">+509 42936443</a></p>
