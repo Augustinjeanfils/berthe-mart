@@ -19,6 +19,7 @@
                     </div>
                     <span class="logo-text">Bon Cœur Mini Mart</span>
                 </div>
+<div id="product-list"></div>
 
                 <!-- Navigation Desktop -->
                 <nav class="nav-desktop">
@@ -75,6 +76,16 @@
                     <li><a href="#" onclick="navigateTo('contact')">Contact</a></li>
                 </ul>
             </div>
+ <div id="admin-panel" style="display:none; padding:20px; border:1px solid black;">
+    <h2>Section Admin</h2>
+
+    <input id="product-name" type="text" placeholder="Nom du produit">
+    <input id="product-price" type="text" placeholder="Prix">
+    <input id="product-img" type="text" placeholder="URL de l’image">
+    <input id="product-category" type="text" placeholder="Catégorie">
+
+    <button id="add-product-btn">Ajouter le produit</button>
+</div>
 
            
             <div class="footer-col contact">
@@ -100,30 +111,14 @@
                 </div>
             </div>
         </div>
-<div id="login-section">
-    <input type="password" id="admin-pass" placeholder="Mot de passe admin">
-    <button onclick="checkAdminPassword()">Entrer</button>
-    <p id="admin-error"></p>
-</div>
 
-<div id="admin-panel" style="display:none;">
-    <input type="text" id="p-name" placeholder="Nom du produit">
-    <input type="number" id="p-price" placeholder="Prix">
-    <select id="p-category">
-        <option value="">Choisir une catégorie</option>
-        <option value="Chaussures">Chaussures</option>
-        <option value="Pantalon">Pantalon</option>
-        <option value="T-shirt">T-shirt</option>
-        <option value="Accessoires">Accessoires</option>
-    </select>
-    <input type="file" id="p-image">
-    <button onclick="addProduct()">Ajouter le produit</button>
-</div>
         <div class="footer-bottom">
             <div class="container">
                 <p>© 2025 Bon Cœur Mini Mart — Tous droits réservés By Ernston&Augustin</p>
             </div>
         </div>
+        <button id="admin-btn" style="margin:20px;">Admin</button>
+
     </footer>
     <script src="script.js"></script>
 </body>

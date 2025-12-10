@@ -2240,40 +2240,79 @@ function goToCart() {
 function attachPaymentListeners() {
     // Listeners are attached inline via onclick
 }
-const addProductForm = document.getElementById('addProductForm');
+/* ================================
+   SECTION : ACCÈS ADMIN + AJOUT PRODUITS
+   ================================ */
 
-addProductForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
+// Mot de passe admin (à changer si tu veux)
+const ADMIN_PASSWORD = "admin123";
 
-  const formData = new FormData(addProductForm);
-  const productData = {};
+// Récupération du bouton admin
+const adminBtn = document.getElementById("admin-btn");
 
-  for (const [key, value] of formData.entries()) {
-    productData[key] = value;
-  }
+// Formulaire admin (sera affiché seulement si l’admin se connecte)
+const adminPanel = document.getElementById("admin-panel");
 
-  // Vérifiez si l'utilisateur a le droit d'accès
-  if (isAdmin && productData.password === adminPassword) {
-    // Ajoutez le produit à votre base de données ou à votre système de gestion des produits
-    // Par exemple, vous pouvez envoyer une requête AJAX pour envoyer les données au serveur
-    const response = await fetch('/api/products', {
-      method: 'POST',
-      body: JSON.stringify(productData),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+// Liste des produits sur le site
+const productListContainer = document.getElementById("product-list");
 
-    if (response.ok) {
-      // Le produit a été ajouté avec succès
-      // Mettez à jour la page ou affichez un message de succès
+// Lors du clic sur le bouton admin → demande mot de passe
+adminBtn.addEventListener("click", () => {
+    const input = prompt("Entrer le mot de passe admin :");
+
+    if (input === ADMIN_PASSWORD) {
+        adminPanel.style.display = "block";
+        alert("Connexion réussie ✓");
     } else {
-      // Une erreur s'est produite lors de l'ajout du produit
-      // Affichez un message d'erreur
+        alert("Mot de passe incorrect ❌");
     }
-  } else {
-    // L'utilisateur n'a pas le droit d'accès
-    // Affichez un message d'erreur
-  }
 });
+
+// Quand l’admin valide un nouveau produit
+document.getElementById("add-product-btn").addEventListener("click", () => {
+    const nom = document.getElementById("product-name").value.trim();
+    const prix = document.getElementById("product-price").value.trim();
+    const photo = document.getElementById("product-img").value.trim();
+    const category = document.getElementById("product-category").value.trim();
+
+    if (!nom || !prix || !photo || !category) {
+        alert("Veuillez remplir tous les champs.");
+        return;
+    }
+
+    // Objet produit
+    const newProduct = { nom, prix, photo, category };
+
+    // Ajouter au localStorage pour que ça reste après refresh
+    let produits = JSON.parse(localStorage.getItem("produits")) || [];
+    produits.push(newProduct);
+    localStorage.setItem("produits", JSON.stringify(produits));
+
+    // Afficher sur le site immédiatement
+    afficherProduit(newProduct);
+
+    alert("Produit ajouté avec succès !");
+});
+
+// Fonction qui génère le HTML d’un produit
+function afficherProduit(p) {
+    const item = document.createElement("div");
+    item.className = "product-card";
+
+    item.innerHTML = `
+        <img src="${p.photo}" alt="${p.nom}">
+        <h3>${p.nom}</h3>
+        <p class="price">${p.prix} HTG</p>
+        <p class="category">Catégorie : ${p.category}</p>
+    `;
+
+    productListContainer.appendChild(item);
+}
+
+// Charger les produits déjà enregistrés
+window.addEventListener("DOMContentLoaded", () => {
+    let produits = JSON.parse(localStorage.getItem("produits")) || [];
+    produits.forEach(p => afficherProduit(p));
+});
+
 
