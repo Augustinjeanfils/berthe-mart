@@ -19,6 +19,7 @@
                     </div>
                     <span class="logo-text">Bon Cœur Mini Mart</span>
                 </div>
+<div id="product-list"></div>
 
                 <!-- Navigation Desktop -->
                 <nav class="nav-desktop">
@@ -122,7 +123,17 @@
                 <p>© 2025 Bon Cœur Mini Mart — Tous droits réservés By Ernston&Augustin</p>
             </div>
         </div>
-        <button id="admin-btn" style="margin:20px;">Admin</button>
+        <div id="admin-panel" style="display:none; padding:20px; border:1px solid black;">
+    <h2>Section Admin</h2>
+
+    <input id="product-name" type="text" placeholder="Nom du produit">
+    <input id="product-price" type="text" placeholder="Prix">
+    <input id="product-img" type="file" accept="image/*">
+    <input id="product-category" type="text" placeholder="Catégorie">
+
+    <button id="add-product-btn">Ajouter le produit</button>
+</div>
+
 
     </footer>
     <script src="script.js"></script>

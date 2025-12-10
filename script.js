@@ -2240,17 +2240,23 @@ function goToCart() {
 function attachPaymentListeners() {
     // Listeners are attached inline via onclick
 }
-/* ======================================
-   ADMIN : AJOUT PRODUIT + PHOTO LOCALE
-   ====================================== */
+/* ================================
+   SECTION : ACCÈS ADMIN + AJOUT PRODUITS
+   ================================ */
 
+// Mot de passe admin (à changer si tu veux)
 const ADMIN_PASSWORD = "admin123";
 
+// Récupération du bouton admin
 const adminBtn = document.getElementById("admin-btn");
+
+// Formulaire admin (sera affiché seulement si l’admin se connecte)
 const adminPanel = document.getElementById("admin-panel");
+
+// Liste des produits sur le site
 const productListContainer = document.getElementById("product-list");
 
-// OUVRIR PANEL ADMIN
+// Lors du clic sur le bouton admin → demande mot de passe
 adminBtn.addEventListener("click", () => {
     const input = prompt("Entrer le mot de passe admin :");
 
@@ -2262,47 +2268,57 @@ adminBtn.addEventListener("click", () => {
     }
 });
 
-// AJOUTER PRODUIT
+// Quand l’admin valide un nouveau produit
 document.getElementById("add-product-btn").addEventListener("click", () => {
     const nom = document.getElementById("product-name").value.trim();
     const prix = document.getElementById("product-price").value.trim();
     const category = document.getElementById("product-category").value.trim();
-    const fileInput = document.getElementById("product-img-file");
+    const fileInput = document.getElementById("product-img");
+    const file = fileInput.files[0];
 
-    if (!nom || !prix || !category || fileInput.files.length === 0) {
+    if (!nom || !prix || !category || !file) {
         alert("Veuillez remplir tous les champs et choisir une image.");
         return;
     }
 
-    const fichier = fileInput.files[0];
+    // Lire l’image en Base64
     const reader = new FileReader();
-
     reader.onload = function(e) {
-        const imageBase64 = e.target.result;
+        const photoBase64 = e.target.result;
 
-        const newProduct = {
-            nom,
-            prix,
-            category,
-            photo: imageBase64
-        };
+        // Objet produit
+        const newProduct = { nom, prix, category, photo: photoBase64 };
 
-        // Sauvegarde
+        // Ajouter au localStorage
         let produits = JSON.parse(localStorage.getItem("produits")) || [];
         produits.push(newProduct);
         localStorage.setItem("produits", JSON.stringify(produits));
 
-        // Afficher
+        // Afficher immédiatement
         afficherProduit(newProduct);
 
         alert("Produit ajouté avec succès !");
     };
 
-    // Convertit la photo en Base64
-    reader.readAsDataURL(fichier);
+    reader.readAsDataURL(file); // Convertir en Base64
 });
 
-// AFFICHER UN PRODUIT SUR LE SITE
+
+    // Objet produit
+    const newProduct = { nom, prix, photo, category };
+
+    // Ajouter au localStorage pour que ça reste après refresh
+    let produits = JSON.parse(localStorage.getItem("produits")) || [];
+    produits.push(newProduct);
+    localStorage.setItem("produits", JSON.stringify(produits));
+
+    // Afficher sur le site immédiatement
+    afficherProduit(newProduct);
+
+    alert("Produit ajouté avec succès !");
+
+
+// Fonction qui génère le HTML d’un produit
 function afficherProduit(p) {
     const item = document.createElement("div");
     item.className = "product-card";
@@ -2317,7 +2333,7 @@ function afficherProduit(p) {
     productListContainer.appendChild(item);
 }
 
-// CHARGER PRODUITS EXISTANTS
+// Charger les produits déjà enregistrés
 window.addEventListener("DOMContentLoaded", () => {
     let produits = JSON.parse(localStorage.getItem("produits")) || [];
     produits.forEach(p => afficherProduit(p));
