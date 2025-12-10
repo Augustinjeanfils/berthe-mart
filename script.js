@@ -2240,94 +2240,40 @@ function goToCart() {
 function attachPaymentListeners() {
     // Listeners are attached inline via onclick
 }
-/* -----------------------------------------------------
-   CONFIGURATION ADMIN
-   ----------------------------------------------------- */
-const ADMIN_PASSWORD = "1234"; // <<< Change ton mot de passe ici
+const addProductForm = document.getElementById('addProductForm');
 
+addProductForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
 
+  const formData = new FormData(addProductForm);
+  const productData = {};
 
-/* -----------------------------------------------------
-   CONNEXION ADMIN
-   ----------------------------------------------------- */
-function checkAdminPassword() {
-    const inputPass = document.getElementById("admin-pass").value;
+  for (const [key, value] of formData.entries()) {
+    productData[key] = value;
+  }
 
-    if (inputPass === ADMIN_PASSWORD) {
-        document.getElementById("login-section").style.display = "none";
-        document.getElementById("admin-panel").style.display = "block";
-    } else {
-        document.getElementById("admin-error").textContent = "Mot de passe incorrect.";
-    }
-}
-
-
-
-/* -----------------------------------------------------
-   AJOUT PRODUIT (Nom, Prix, Image, Catégorie)
-   ----------------------------------------------------- */
-function addProduct() {
-
-    const name = document.getElementById("p-name").value;
-    const price = document.getElementById("p-price").value;
-    const category = document.getElementById("p-category").value;
-    const file = document.getElementById("p-image").files[0];
-
-    if (!name || !price || !category || !file) {
-        alert("Veuillez remplir tous les champs.");
-        return;
-    }
-
-    const reader = new FileReader();
-
-    reader.onload = function(event) {
-
-        const newProduct = {
-            name: name,
-            price: price,
-            category: category,
-            image: event.target.result
-        };
-
-        let products = JSON.parse(localStorage.getItem("products")) || [];
-
-        products.push(newProduct);
-
-        localStorage.setItem("products", JSON.stringify(products));
-
-        alert("Produit ajouté !");
-    };
-
-    reader.readAsDataURL(file);
-}
-
-
-
-/* -----------------------------------------------------
-   AFFICHER LES PRODUITS (boutique)
-   ----------------------------------------------------- */
-function showProducts() {
-
-    const container = document.getElementById("products-container");
-    if (!container) return;
-
-    const products = JSON.parse(localStorage.getItem("products")) || [];
-
-    container.innerHTML = "";
-
-    products.forEach(prod => {
-
-        const item = document.createElement("div");
-        item.classList.add("product");
-
-        item.innerHTML = `
-            <img src="${prod.image}" class="product-img">
-            <h3>${prod.name}</h3>
-            <p>${prod.price} HTG</p>
-            <span class="category-tag">${prod.category}</span>
-        `;
-
-        container.appendChild(item);
+  // Vérifiez si l'utilisateur a le droit d'accès
+  if (isAdmin && productData.password === adminPassword) {
+    // Ajoutez le produit à votre base de données ou à votre système de gestion des produits
+    // Par exemple, vous pouvez envoyer une requête AJAX pour envoyer les données au serveur
+    const response = await fetch('/api/products', {
+      method: 'POST',
+      body: JSON.stringify(productData),
+      headers: {
+        'Content-Type': 'application/json'
+      }
     });
-}
+
+    if (response.ok) {
+      // Le produit a été ajouté avec succès
+      // Mettez à jour la page ou affichez un message de succès
+    } else {
+      // Une erreur s'est produite lors de l'ajout du produit
+      // Affichez un message d'erreur
+    }
+  } else {
+    // L'utilisateur n'a pas le droit d'accès
+    // Affichez un message d'erreur
+  }
+});
 
